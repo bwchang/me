@@ -15,6 +15,7 @@ $(document).ready(function() {
 		if (this.id == "projects") {
 			removeBackgrounds();
 			$(".background").addClass("background-projects");
+			projectsTitleText();
 		}
 		if (this.id == "contact") {
 			removeBackgrounds();
@@ -54,21 +55,36 @@ $(document).ready(function() {
 	}
 
 	function homeTitleText() {
+		$(".projects-container").hide();
 		$(".header").fadeOut(function() {
+			$("#header-container").show();
+			$("#paragraph-container").show();
   			$(".header").text("Betty Wen Chang").fadeIn(600);
 		});
 		homeText();
 	}
 
 	function aboutTitleText() {
+		$(".projects-container").hide();
 		$(".header").fadeOut(function() {
+			$("#header-container").show();
+			$("#paragraph-container").show();
   			$(".header").text("Designer.\nDeveloper.\nDreamer.").fadeIn(600);
 		});
 		aboutText();
 	}
 
+	function projectsTitleText() {
+		$("#header-container").hide();
+		$("#paragraph-container").hide();
+		$(".projects-container").fadeIn(1000);
+	}
+
 	function contactTitleText() {
+		$(".projects-container").hide();
 		$(".header").fadeOut(function() {
+			$("#header-container").show();
+			$("#paragraph-container").show();
   			$(".header").text("Contact Me").fadeIn(600);
 		});
 		contactText();
@@ -90,9 +106,9 @@ $(document).ready(function() {
 	function contactText() {
 		$(".paragraph").fadeOut(function() {
 			$(".paragraph").empty().fadeIn();
-			$(".paragraph").prepend("<img class='contact-icon' id='facebook' src='assets/img/facebook.png'>");
-			$(".paragraph").prepend("<img class='contact-icon' id='email' src='assets/img/email-white.png'>");
-			$(".paragraph").prepend("<img class='contact-icon' id='github' src='assets/img/github-white.png'>");
+			$(".paragraph").prepend("<a href='https://facebook.com/cbljcrt'><img class='contact-icon' id='facebook' src='assets/img/facebook.png'></a>");
+			$(".paragraph").prepend("<a href='mailto:bwchang@berkeley.edu?Subject=Your%20Portfolio' target='_top'><img class='contact-icon' id='email' src='assets/img/email-white.png'></a>");
+			$(".paragraph").prepend("<a href='https://github.com/bwchang'><img class='contact-icon' id='github' src='assets/img/github-white.png'></a>");
 		});
 	}
 
