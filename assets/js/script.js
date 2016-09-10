@@ -112,5 +112,5 @@ $(document).ready(function() {
 		});
 	}
 
-	var aboutMe = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+	var aboutMe = "I am Betty, a third-year Computer Science and Cognitive Science student at UC Berkeley. I grew up in Taipei, Taiwan, and moved to Southern California when I was 13 years old. Since taking my first computer science course at Berkeley, I have fallen in love with programming, and in particular, web development. I find web design to be the perfect outlet for my creativity, and for me, there is nothing better than watching my ideas transform into a real, tangible product. I also have a great love for all things food, cats, and sports."
 });
