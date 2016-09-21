@@ -17,6 +17,11 @@ $(document).ready(function() {
 			$(".background").addClass("background-projects");
 			projectsTitleText();
 		}
+		if (this.id == "experience") {
+			removeBackgrounds();
+			$(".background").addClass("background-experience");
+			experienceTitleText();
+		}
 		if (this.id == "contact") {
 			removeBackgrounds();
 			$(".background").addClass("background-contact");
@@ -57,6 +62,7 @@ $(document).ready(function() {
 	function removeBackgrounds() {
 		$(".background").removeClass("background-about");
 		$(".background").removeClass("background-projects");
+		$(".background").removeClass("background-experience");
 		$(".background").removeClass("background-contact");
 	}
 
@@ -83,7 +89,18 @@ $(document).ready(function() {
 	function projectsTitleText() {
 		$("#header-container").hide();
 		$("#paragraph-container").hide();
+		$(".projects-container").hide();
+		projectsText();
 		$(".projects-container").fadeIn(1000);
+	}
+
+	function experienceTitleText() {
+		$("#header-container").hide();
+		$("#paragraph-container").hide();
+		$(".projects-container").hide();
+		experienceText();
+		$(".projects-container").fadeIn(1000);
+		$("#more").hide();
 	}
 
 	function contactTitleText() {
@@ -118,5 +135,57 @@ $(document).ready(function() {
 		});
 	}
 
+	function projectsText() {
+		$("#first-project").find(".projects-description").text(firstProjectDescription);
+		$("#first-project").find("img").attr("src", firstProjectPic);
+		$("#first-project").find(".projects-title").text(firstProjectTitle);
+
+		$("#second-project").find(".projects-description").text(secondProjectDescription);
+		$("#second-project").find("img").attr("src", secondProjectPic);
+		$("#second-project").find(".projects-title").text(secondProjectTitle);
+
+		$("#third-project").find(".projects-description").text(thirdProjectDescription);
+		$("#third-project").find("img").attr("src", thirdProjectPic);
+		$("#third-project").find(".projects-title").text(thirdProjectTitle);
+
+		$(".projects-title").removeClass("experience-title");
+	}
+
+	function experienceText() {
+		$("#first-project").find(".projects-description").text(firstExDescription);
+		$("#first-project").find("img").attr("src", firstExPic);
+		$("#first-project").find(".projects-title").text(firstExTitle);
+
+		$("#second-project").find(".projects-description").text(secondExDescription);
+		$("#second-project").find("img").attr("src", secondExPic);
+		$("#second-project").find(".projects-title").text(secondExTitle);
+
+		$("#third-project").find(".projects-description").text(thirdExDescription);
+		$("#third-project").find("img").attr("src", thirdExPic);
+		$("#third-project").find(".projects-title").text(thirdExTitle);
+
+		$(".projects-title").addClass("experience-title");
+	}
+
 	var aboutMe = "I am Betty, a third-year Computer Science and Cognitive Science student at UC Berkeley. I grew up in Taipei, Taiwan, and moved to Southern California when I was 13 years old. Since taking my first computer science course at Berkeley, I have fallen in love with programming, and in particular, web development. I find web development to be the perfect outlet for my creativity, and for me, there is nothing better than watching my ideas transform into a real, tangible product. I also have a great love for all things food, cats, and sports."
+
+	var firstProjectTitle = "A Semester in Meals"
+	var firstProjectDescription = "A personal food journal of Spring 2016."
+	var firstProjectPic = "assets/img/meals.jpg"
+	var secondProjectTitle = "SwaggySearch"
+	var secondProjectDescription = "A Wikipedia Search Engine that crawls and indexes Wikipedia pages, then responds to a search query by listing the ten most relevant Wikipedia pages."
+	var secondProjectPic = "assets/img/search.jpg"
+	var thirdProjectTitle = "Room Escape Game"
+	var thirdProjectDescription = "A text-based, terminal-based room escape game written in Python using Object-Oriented Programming."
+	var thirdProjectPic = "assets/img/room.jpeg"
+
+	var firstExTitle = "Lendogram"
+	var firstExPic = "assets/img/lendogram.png"
+	var firstExDescription = "I worked as a software development intern at Lendogram, a Toronto-based startup, in Summer 2016. I developed their iOS application using Objective-C and their web application using Ruby on Rails."
+	var secondExTitle = "Berkeley ANova"
+	var secondExPic = "assets/img/anova.png"
+	var secondExDescription = "I am currently the Operations Chair for ANova, a non-profit club that aims to improve CS education by teaching computer science at middle and high schools around the Bay Area. I have developed and taught curriculum at middle and high schools, designed a student-run course at UC Berkeley, and oversaw the Online Mentorship Program."
+	var thirdExTitle = "UC Berkeley Tutor"
+	var thirdExPic = "assets/img/cal.png"
+	var thirdExDescription = "Provided 1-on-1 and group tutoring for students in the Foundations of Data Science course, held office hours, and graded homeworks and exams."
 });

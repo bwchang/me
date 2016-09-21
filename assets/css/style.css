@@ -143,6 +143,21 @@ body {
     transition: all 1.5s;
 }
 
+.background-experience {
+	background: url("../img/ucb.jpg");
+	background-size: 100% 100%;
+    height: 100%;
+    /*-webkit-filter: blur(1px);
+    -moz-filter: blur(1px);
+    -o-filter: blur(1px);
+    -ms-filter: blur(1px);
+    filter: blur(1px);*/
+    -webkit-transition: all 1.5s;
+    -moz-transition: all 1.5s;
+    -o-transition: all 1.5s;
+    transition: all 1.5s;
+}
+
 .background-contact {
 	background: url("../img/michi1.jpg");
 	background-size: 100% 100%;
@@ -161,7 +176,7 @@ body {
 #background-overlay {
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.6);
+    background: rgba(0, 0, 0, 0.7);
     position: relative;
 }
 
@@ -220,11 +235,6 @@ body {
 }
 
 .projects-title a {
-	font-family: Cutive Mono;
-	font-size: 40px;
-	color: white;
-	position: absolute;
-	top: 0;
 	text-decoration: none;
 }
 
@@ -239,8 +249,16 @@ body {
 	width: 500px;
 }
 
+.experience-title {
+	cursor: default;
+}
+
 .projects-title:hover {
 	color: #bfbfbf;
+}
+
+.experience-title:hover {
+	color: white;
 }
 
 #more {
