@@ -42,7 +42,7 @@ body {
 
 #arrows-container {
 	position: absolute;
-	right: 100px;
+	right: 120px;
 	top: 35%;
 	margin-right: 10px;
 }
@@ -166,7 +166,7 @@ body {
 }
 
 #hero {
-	width: 80%;
+	width: 90%;
 	height: 80%;
 	position: absolute;
 	left: 5%;
@@ -203,38 +203,62 @@ body {
 	height: 33%;
 	position: relative;
 	display: none;
-	width: 200%;
+	width: 100%;
+}
+
+.projects-pic {
+	width: 100px;
+	border-radius: 50%;
+	height: 100px;
+	margin: 0px;
+}
+
+.projects-pic img {
+	width: 100%;
+	height: 100%;
+	border-radius: 50%;
 }
 
 .projects-title a {
 	font-family: Cutive Mono;
-	font-size: 48px;
+	font-size: 40px;
 	color: white;
 	position: absolute;
 	top: 0;
 	text-decoration: none;
-	width: 900px;
 }
 
 .projects-title {
 	font-family: Cutive Mono;
-	font-size: 48px;
+	font-size: 40px;
 	color: white;
 	position: absolute;
 	top: 0;
-}
-
-#food {
+	left: 110px;
 	cursor: pointer;
+	width: 500px;
 }
 
-#food:hover {
+.projects-title:hover {
 	color: #bfbfbf;
 }
 
 #more {
 	position: absolute;
-	top: 80;
+	bottom: -20;
+	height: 10%;
+	left: 35%;
+	width: 200px;
+}
+
+#more-title {
+	font-size: 24px;
+	cursor: default;
+	left: 0;
+}
+
+#more-title:hover {
+	color: white;
 }
 
 .projects-description {
@@ -243,7 +267,7 @@ body {
 	font-size: 14px;
 	position: absolute;
 	top: 60;
-	left: 10;
+	left: 120;
 }
 
 .projects-description img {

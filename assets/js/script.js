@@ -42,6 +42,12 @@ $(document).ready(function() {
 		$("#arrow-projects img").attr('src', 'assets/img/arrow-white.png');
 	});
 
+	$("#experience").hover(function() {
+		$("#arrow-experience img").attr('src', 'assets/img/arrow.png');
+	}, function() {
+		$("#arrow-experience img").attr('src', 'assets/img/arrow-white.png');
+	});
+
 	$("#contact").hover(function() {
 		$("#arrow-contact img").attr('src', 'assets/img/arrow.png');
 	}, function() {
@@ -112,5 +118,5 @@ $(document).ready(function() {
 		});
 	}
 
-	var aboutMe = "I am Betty, a third-year Computer Science and Cognitive Science student at UC Berkeley. I grew up in Taipei, Taiwan, and moved to Southern California when I was 13 years old. Since taking my first computer science course at Berkeley, I have fallen in love with programming, and in particular, web development. I find web design to be the perfect outlet for my creativity, and for me, there is nothing better than watching my ideas transform into a real, tangible product. I also have a great love for all things food, cats, and sports."
+	var aboutMe = "I am Betty, a third-year Computer Science and Cognitive Science student at UC Berkeley. I grew up in Taipei, Taiwan, and moved to Southern California when I was 13 years old. Since taking my first computer science course at Berkeley, I have fallen in love with programming, and in particular, web development. I find web development to be the perfect outlet for my creativity, and for me, there is nothing better than watching my ideas transform into a real, tangible product. I also have a great love for all things food, cats, and sports."
 });
