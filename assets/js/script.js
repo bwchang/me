@@ -138,15 +138,15 @@ $(document).ready(function() {
 	function projectsText() {
 		$("#first-project").find(".projects-description").text(firstProjectDescription);
 		$("#first-project").find("img").attr("src", firstProjectPic);
-		$("#first-project").find(".projects-title").text(firstProjectTitle);
+		$("#first-project").find(".projects-title").html(firstProjectTitle);
 
 		$("#second-project").find(".projects-description").text(secondProjectDescription);
 		$("#second-project").find("img").attr("src", secondProjectPic);
-		$("#second-project").find(".projects-title").text(secondProjectTitle);
+		$("#second-project").find(".projects-title").html(secondProjectTitle);
 
 		$("#third-project").find(".projects-description").text(thirdProjectDescription);
 		$("#third-project").find("img").attr("src", thirdProjectPic);
-		$("#third-project").find(".projects-title").text(thirdProjectTitle);
+		$("#third-project").find(".projects-title").html(thirdProjectTitle);
 
 		$(".projects-title").removeClass("experience-title");
 	}
@@ -169,13 +169,13 @@ $(document).ready(function() {
 
 	var aboutMe = "I am Betty, a third-year Computer Science and Cognitive Science student at UC Berkeley. I grew up in Taipei, Taiwan, and moved to Southern California when I was 13 years old. Since taking my first computer science course at Berkeley, I have fallen in love with programming, and in particular, web development. I find web development to be the perfect outlet for my creativity, and for me, there is nothing better than watching my ideas transform into a real, tangible product. I also have a great love for all things food, cats, and sports."
 
-	var firstProjectTitle = "A Semester in Meals"
+	var firstProjectTitle = "<a href='https://bwchang.github.io'>A Semester in Meals</a>"
 	var firstProjectDescription = "A personal food journal of Spring 2016."
 	var firstProjectPic = "assets/img/meals.jpg"
-	var secondProjectTitle = "SwaggySearch"
+	var secondProjectTitle = "<a href='https://github.com/bwchang/SwaggySearch'>SwaggySearch</a>"
 	var secondProjectDescription = "A Wikipedia Search Engine that crawls and indexes Wikipedia pages, then responds to a search query by listing the ten most relevant Wikipedia pages."
 	var secondProjectPic = "assets/img/search.jpg"
-	var thirdProjectTitle = "Room Escape Game"
+	var thirdProjectTitle = "<a href='https://github.com/bwchang/roomescape'>Room Escape Game</a>"
 	var thirdProjectDescription = "A text-based, terminal-based room escape game written in Python using Object-Oriented Programming."
 	var thirdProjectPic = "assets/img/room.jpeg"
 

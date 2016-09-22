@@ -1,5 +1,6 @@
 body {
 	margin: 0px;
+	cursor: default;
 }
 
 #container {
@@ -236,6 +237,7 @@ body {
 
 .projects-title a {
 	text-decoration: none;
+	color: white;
 }
 
 .projects-title {
@@ -253,7 +255,7 @@ body {
 	cursor: default;
 }
 
-.projects-title:hover {
+.projects-title a:hover {
 	color: #bfbfbf;
 }
 
